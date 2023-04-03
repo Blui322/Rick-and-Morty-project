@@ -1,0 +1,40 @@
+*{margin: 0px;
+padding: 6px;
+box-sizing:border-box
+}
+
+ul {
+ list-style: none;
+}
+
+body { text-align: center;
+margin: 30px;
+background: burlywood;
+background: radial-gradient(circle, blue,white);
+}
+ 
+ h1 {
+    background: radial-gradient(circle, rgb(171, 17, 20),rgb(229, 236, 39));
+    border-bottom: 2px solid #17d656;
+    
+   
+   
+  }
+
+
+.card:hover{
+    background-color: rgb(226, 43, 43);
+}
+
+@media (orientation: landscape) and (min-width: 200px) {
+    
+  
+    #one-results, #results{
+      display: grid;
+      grid-template-columns: repeat(4 , 1fr);
+      grid-template-rows: auto;
+      row-gap: 50px;
+      column-gap: 0;
+    }
+  }
+ 

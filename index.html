@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rick and morty project</title>
+    <title>Rick and Morty project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
-    
+    <h1>Rick and Morty App</h1>
+     <div class="container">
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul>
+             <li>
+              <a class="nav-link " aria-current="page" href="index.html">Characters</a>
+                </li>
+               <li>
+              <a class="nav-link" href="epi.html">Episodes</a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <section>
+            <form class="form">
+                 <label>Pick a:
+                     <input type="text" id="search" name="appRick">
+                    <input type="submit" value="search">
+                </label>
+             </form>
+        </section>
+        <h2>page
+            <select name="page" id="page" onchange="apiRick(this.value)">
+           <script> 
+                for (let i = 1; i <= 42; i++){
+                document.write(`<option value="${i}">${i}</option>`);}
+           </script>
+          </select></h2>
+ <div id="one-results">
+</div>
 </body>
 </html>
